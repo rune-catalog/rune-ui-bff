@@ -19,6 +19,7 @@ COPY containerpilot.json /etc/containerpilot.json
 # Install app
 RUN [ "mkdir", "-p", "/usr/local/app" ]
 COPY [ "package.json", "/usr/local/app" ]
+COPY [ ".", "/usr/local/app/" ]
 WORKDIR /usr/local/app
 RUN npm install
 

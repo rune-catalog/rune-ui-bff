@@ -1,12 +1,9 @@
 {
-  "consul": "consul:5300",
-  "preStart": "",
+  "consul": "consul:8500",
   "stopTimeout": 5,
-  "preStop": "",
-  "postStop": "",
   "services": [
     {
-      "name": "app",
+      "name": "Rune UI BFF",
       "port": 8080,
       "health": [
         "/usr/bin/curl",
@@ -18,8 +15,7 @@
         "eth0"
       ],
       "poll": 10,
-      "ttl": 30,
-      "timeout": "10s"
+      "ttl": 30
     }
   ],
   "backends": [ ]

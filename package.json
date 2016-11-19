@@ -1,0 +1,23 @@
+{
+  "name": "rune-ui-bff",
+  "version": "0.0.1",
+  "description": "Backend for Frontend for the Rune UI",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rune-catalog/rune-ui-bff.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rune-catalog/rune-ui-bff/issues"
+  },
+  "homepage": "https://github.com/rune-catalog/rune-ui-bff#readme",
+  "dependencies": {
+    "bunyan": "^1.8.5",
+    "restify": "^4.3.0"
+  }
+}

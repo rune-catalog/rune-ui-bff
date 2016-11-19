@@ -1,0 +1,26 @@
+{
+  "consul": "consul:5300",
+  "preStart": "",
+  "stopTimeout": 5,
+  "preStop": "",
+  "postStop": "",
+  "services": [
+    {
+      "name": "app",
+      "port": 8080,
+      "health": [
+        "/usr/bin/curl",
+        "--fail",
+        "-s",
+        "http://localhost:8080/status"
+      ],
+      "interfaces": [
+        "eth0"
+      ],
+      "poll": 10,
+      "ttl": 30,
+      "timeout": "10s"
+    }
+  ],
+  "backends": [ ]
+}
